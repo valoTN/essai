@@ -1,0 +1,14 @@
+html
+    head
+        title= obj && obj.elementname
+    body
+        h1= "Hello World!"
+        ul
+            li= "Number of rows : " + obj.row_number
+            li= "Number of columns : " + obj.columns_number
+            li
+                code= obj.body
+            li= "See snippet"
+            div
+                #{obj.body}
+        -console.log(obj)
